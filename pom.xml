@@ -117,15 +117,6 @@
   </dependencies>
   <build>
     <plugins>
-    <!--      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.1.1</version>
-        <configuration>
-          <excludes>
-            <exclude>**/module-info.class</exclude>
-          </excludes>
-        </configuration>
-      </plugin> -->
       <plugin>
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>jira-maven-plugin</artifactId>
