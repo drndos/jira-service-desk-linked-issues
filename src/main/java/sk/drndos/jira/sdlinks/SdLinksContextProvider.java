@@ -131,7 +131,7 @@ public class SdLinksContextProvider implements ContextProvider {
   private CustomerRequest customerRequest(ApplicationUser user, Long issueId) {
     return serviceDeskCustomerRequestService.getCustomerRequest(user,
         serviceDeskCustomerRequestService.newIssueQueryBuilder()
-            //.overrideSecurity(true)
+            .overrideSecurity(true)
             .issue(issueId)
             .build()
     );
