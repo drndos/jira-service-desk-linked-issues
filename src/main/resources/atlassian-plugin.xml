@@ -33,8 +33,4 @@
     <component-import key="serviceDeskCustomerRequestService">
         <interface>com.atlassian.servicedesk.api.request.ServiceDeskCustomerRequestService</interface>
     </component-import>
-    <component-import key="ao" name="Active Objects service"
-                      interface="com.atlassian.activeobjects.external.ActiveObjects">
-        <description>Component to access Active Objects functionality from the plugin</description>
-    </component-import>
 </atlassian-plugin>
