@@ -1,5 +1,5 @@
 # jira-service-desk-linked-issues
-List of linked customer requests within customer request in Customer Portal in Jira Service Desk
+List of linked customer requests within customer request in Customer Portal on Jira Service Desk
 
 - Only issue links within the project are shown.
 - Ignores whether user has permssion to view the linked request or not. (user will be redirected to main page after clicking on non permitted request)
