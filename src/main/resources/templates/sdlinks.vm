@@ -1,0 +1,24 @@
+#if(!$issue_link_groups.isEmpty())
+<h5>$i18n.getText('sdlinks.related-requests')</h5>
+
+    #foreach ( $issue_link_group in $issue_link_groups)
+    <div>
+      <h6>$issue_link_group.groupName</h6>
+
+        #foreach ( $issue_link in $issue_link_group.links)
+        <div>
+          <img width="16" height="16" src="$issue_link.issueTypeIcon" alt="$issue_link.issueTypeName" title="$issue_link.issueTypeName"/>
+          <a href="$issue_link.issueKey" class="issue-link link-title" title="$issue_link.issueSummary">
+            <span class="link-summary" style="#if($issue_link.resolved)text-decoration: line-through;#end">$issue_link.issueKey</span>
+          </a>
+          <span class="request-status-lozenge">
+            <span class="aui-lozenge aui-lozenge-$issue_link.statusStyle" title="$issue_link.statusName"
+              style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 8em;word-wrap: normal;word-break: normal">
+                $issue_link.statusName
+            </span>
+          </span>
+        </div>
+        #end
+    </div>
+    #end
+#end
